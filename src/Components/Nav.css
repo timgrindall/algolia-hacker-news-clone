@@ -1,0 +1,17 @@
+.nav-wrapper {
+	/*height: 50px;*/
+	font-size: 12px;
+	/*line-height: 24px;*/
+	padding-left: 12px;
+	height: 42px;
+	line-height: 42px;
+}
+
+.processing-time {
+	font-size: 13px;
+	line-height: 42px;
+	color: black;
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}

@@ -1,0 +1,64 @@
+.item {
+	border-bottom: solid 1px #eee;
+	padding: 8px 15px 10px;
+}
+
+.title {
+	font-size: 14px;
+	margin-bottom: 4px;
+	margin-top: 0;
+}
+
+h2.title {
+	font-weight: normal;
+}
+
+h2.title em {
+	font-weight: 700;
+	font-style: normal;
+	background-color: yellow;
+}
+
+h2.title a {
+	text-decoration: none;
+	color: black;
+}
+
+ul.item-info-list {
+	list-style: none;
+	line-height: 12px;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.item-info-list a {
+	text-decoration: none;
+	color: dimgray;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+ul.item-info-list a:hover {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+ul.item-info-list li {
+	display: inline-block;
+	border-left: 1px solid #cfcfcf;
+	margin-right: 5px;
+	padding-left: 5px;
+}
+
+ul.item-info-list li.first-element {
+	border-left: none;
+	padding-left: 0;
+}
+
+.comment {
+	padding: 10px 0 0 10px;
+	color: black;
+	font-size: 12px;
+	line-height: 1.5;
+}

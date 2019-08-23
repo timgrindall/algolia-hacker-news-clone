@@ -1,0 +1,14 @@
+Todo:
+	X 1. Implement prop functions for Nav component to pass input up to App component
+	X 2. Fully implement custom queries (not hardcoded)
+	X 3. Implement display of processing time
+	X 5. Implement proper linking of item info (shouldn't be too hard)
+	X 6. Implement highlighting of search terms in result
+	X 7. Implement conversion of date to string ("a day ago", "a minute ago", etc.)
+	X 8. Implement proper display of comments
+	X 9. Implement pagination
+	X 10. Fix bug with pagination when selecting last page (50)
+	X 11. Create footer links and pages to link to
+	12. Optimize for mobile
+
+8-14-19 Note: found out setState() does not merge nested state objects when setting state ( example: this.setState({filters: { queryType: queryType}}) )

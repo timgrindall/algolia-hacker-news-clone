@@ -1,0 +1,138 @@
+/* app.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana,Geneva,sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+	.page-wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+/* header.css */
+
+.logo-wrapper {
+	width: 70px;
+	display: inline-block;
+}
+
+.header-logo {
+	height: 48px;
+	width: 48px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.header-title {
+	height: auto;
+	width: auto;
+	font-size: 18px;
+	padding-top: 6px;
+	line-height: 1em;
+	vertical-align: top;
+	display: hidden;
+	visibility: hidden;
+}
+
+@media only screen and (min-width: 769px) {
+	.header-title {
+		display: inline-block;
+		visibility: visible;
+		width: 120px;
+	}
+
+	.logo-wrapper {
+		width: 230px;
+	}
+}
+
+.header-wrapper {
+	box-sizing: border-box;
+	height: 60px;
+	width: 100%;
+	background-color: #ff742b;
+	color: white;
+	padding: 5px;
+}
+
+.search-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3px;
+	width: calc(100% - 80px);
+}
+
+.item-input-wrapper {
+	width: 100%;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+input.search-bar {
+	box-shadow: none;
+	line-height: 25px;
+	padding: 0 15px 0 50px;
+	height: 42px;
+	/*border-radius: 25px;*/
+	border-color: transparent;
+	border: none;
+	width: 100%;
+	background-image: url('../icons/icons8-search-30.png');
+	background-repeat: no-repeat;
+	background-size: 27px;
+	background-position: 10px 7px;
+	font-size: 1em;
+	color: #5c5c5c;
+}
+
+.powered-by {
+	display: none;
+	visibility: hidden;
+	/*width: 80px;*/
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 481px) {
+	.powered-by {
+		visibility: visible;
+		display: inline-block;
+	}
+
+	.search-wrapper {
+		width: calc(100% - 100px);
+	}
+
+	.item-input-wrapper {
+		width: calc(100% - 100px);
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.search-wrapper {
+		width: calc(100% - 230px);
+	}
+
+	.item-input-wrapper {
+		width: calc(100% - 100px);
+	}
+}
+
+.by-algolia {
+	display: inline-block;
+	margin-left: 5px;
+	color: black;
+}
+
+.algolia-logo {
+	height: 15px;
+	margin-top: 1px;
+	margin-left: 5px;
+	vertical-align: top;
+	display: inline-block;
+}

@@ -1,0 +1,51 @@
+.page-numbers-container {
+	background-color: #f6f6ef;
+	color: black;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+ul.search-pagination {
+	padding: 20px 0 0;
+	text-align: center;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul.search-pagination li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+ul.search-pagination li button {
+	margin: 3px;
+	padding: 5px 10px;
+	font-size: 12px;
+	text-align: center;
+	background: 0 0;
+	border: 1px solid #9d9d9d;
+	color: #9d9d9d;
+	outline: none;
+	border-radius: 5px;
+}
+
+ul.search-pagination li button.ellipsis {
+	border-color: #9d9d9d;
+}
+
+button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+ul.search-pagination li.active button {
+	border-color: #ff742b;
+	color: #ff742b;
+}
+
+button {
+	cursor: pointer;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
