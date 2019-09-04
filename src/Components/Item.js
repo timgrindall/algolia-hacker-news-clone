@@ -58,7 +58,7 @@ class Item extends Component {
               <li>
                 <a href={data.link} title="See original post at HN">{this.props.comment ? "" : data.comments + " "}{data.comments !== 1 ? "comments" : "comment"}</a>
               </li>
-              {this.props.comment || this.props.story_text ? null : <li><a href={data.link}>({data.link})</a></li>}
+              {this.props.comment || this.props.story_text ? null : <li className="link"><a href={data.link}>({data.link})</a></li>}
             </ul>
             {this.props.story_text !== null ? <div className="comment"><RawHTML>{this.props.story_text}</RawHTML></div> : (this.props.comment ? <div className="comment"><RawHTML>{data.comment_text}</RawHTML></div> : null)}
           </div>

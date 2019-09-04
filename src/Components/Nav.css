@@ -3,7 +3,7 @@
 	font-size: 12px;
 	/*line-height: 24px;*/
 	padding-left: 12px;
-	height: 42px;
+	/*height: 42px;*/
 	line-height: 42px;
 }
 
@@ -11,7 +11,21 @@
 	font-size: 13px;
 	line-height: 42px;
 	color: black;
-	display: inline-block;
+	display: none;
 	float: right;
 	margin-right: 10px;
+}
+
+.nav-wrapper span.text {
+	display: none;
+}
+
+@media only screen and (min-width: 600px) {
+	.processing-time {
+		display: inline-block;
+	}
+
+	.nav-wrapper span.text {
+		display: inline;
+	}
 }

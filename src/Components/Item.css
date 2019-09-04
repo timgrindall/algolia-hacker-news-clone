@@ -28,6 +28,7 @@ ul.item-info-list {
 	list-style: none;
 	line-height: 12px;
 	display: block;
+	/*white-space: nowrap;*/
 	margin: 0;
 	padding: 0;
 }
@@ -61,4 +62,14 @@ ul.item-info-list li.first-element {
 	color: black;
 	font-size: 12px;
 	line-height: 1.5;
+}
+
+ul.item-info-list li.link {
+	display: none;
+}
+
+@media only screen and (min-width: 575px) {
+	ul.item-info-list li.link {
+		display: inline-block;
+	}
 }

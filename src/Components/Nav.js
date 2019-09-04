@@ -61,10 +61,10 @@ class Nav extends Component {
 
 	render () {
 		return <div className="nav-wrapper">
-		Search <Dropdown selection={this.state.searchType} links={DropdownMenus.Type} onClick={this.handleTypeChange}/>
-		by <Dropdown selection={this.state.sortBy} links={DropdownMenus.SortOrder} onClick={this.handleSortOrderChange}/>
-		for <Dropdown selection={this.state.dateRange} links={DropdownMenus.DateRange} onClick={this.handleDateRangeChange}/>
-		<div className="processing-time">{this.props.nbHits} results ({this.props.processingTime/1000} seconds)</div>
+			<span className="text">Search </span><Dropdown selection={this.state.searchType} links={DropdownMenus.Type} onClick={this.handleTypeChange}/>
+			<span className="text">by</span> <Dropdown selection={this.state.sortBy} links={DropdownMenus.SortOrder} onClick={this.handleSortOrderChange}/>
+			<span className="text">for</span> <Dropdown selection={this.state.dateRange} links={DropdownMenus.DateRange} onClick={this.handleDateRangeChange}/>
+			<div className="processing-time">{this.props.nbHits} results ({this.props.processingTime/1000} seconds)</div>
 		</div>
 	}
 }
